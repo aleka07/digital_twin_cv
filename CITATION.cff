@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: Observation Layer For Digital Twins In Manufacturing
+message: If you use this repository, please cite the associated manuscript.
+type: software
+authors:
+  - family-names: Aleka07
+    given-names: Alikhan
+repository-code: https://github.com/aleka07/digital_twin_cv
+license: MIT
+abstract: >-
+  A vision-based observation-level framework for digital twins in manufacturing,
+  combining production-video perception, multi-object tracking, spatial
+  semantics, and derived observation variables such as occupancy, entries,
+  exits, dwell time, trajectories, and heatmaps.
+keywords:
+  - digital twin
+  - manufacturing
+  - computer vision
+  - object detection
+  - multi-object tracking
+  - zone analytics
+  - observation layer
+
