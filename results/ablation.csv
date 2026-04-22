@@ -1,0 +1,10 @@
+stage,model,precision,recall,map50,map50_95,notes
+freeze22_val,yolo11x,0.913,0.900,0.927,0.591,"merged_round12 validation; partial fine-tune baseline"
+freeze22_clean_test,yolo11x,0.883,0.884,0.939,0.754,"held-out CAM10 17:00 clean test; strongest generalization"
+freeze22_hard_pool,yolo11x,0.893,0.894,0.936,0.821,"held-out CAM10 17:00 hard-pool; strongest generalization"
+freeze10_val,yolo11x,0.958,0.887,0.954,0.600,"merged_round12 validation; deeper unfreeze"
+freeze10_clean_test,yolo11x,0.894,0.835,0.894,0.603,"held-out CAM10 17:00 clean test; worse than freeze22 despite stronger val"
+freeze10_hard_pool,yolo11x,0.918,0.861,0.906,0.628,"held-out CAM10 17:00 hard-pool; deeper unfreeze degrades generalization"
+freeze0_val,yolo11x,0.888,0.871,0.909,0.495,"merged_round12 validation; full fine-tune"
+freeze0_clean_test,yolo11x,0.827,0.766,0.836,0.523,"held-out CAM10 17:00 clean test; clear overfitting"
+freeze0_hard_pool,yolo11x,0.769,0.761,0.791,0.540,"held-out CAM10 17:00 hard-pool; weakest adaptation depth setting"

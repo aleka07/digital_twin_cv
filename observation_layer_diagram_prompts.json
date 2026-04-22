@@ -1,0 +1,116 @@
+{
+  "project": "Manufacturing digital twin observation-layer paper",
+  "version": "1.0",
+  "updated": "2026-04-22",
+  "prompts": [
+    {
+      "id": "framework_overview_landscape",
+      "target_figure": "Figure 1",
+      "goal": "Show the full reusable observation-layer framework from production video to digital-twin-ready state variables.",
+      "canvas": {
+        "aspect_ratio": "16:9",
+        "background": "white"
+      },
+      "style": {
+        "visual_language": "clean academic vector diagram",
+        "palette": [
+          "#2956A3",
+          "#3C8D40",
+          "#D97706",
+          "#6B46C1",
+          "#374151"
+        ],
+        "font_style": "modern sans serif",
+        "line_style": "thin to medium outlines",
+        "effects": "no gradients, no 3D, no glossy UI, no stock icons"
+      },
+      "prompt": "Create a clean journal-ready vector architecture diagram on a white background. Use a left-to-right flow with rounded rectangles and thin arrows. The blocks should read: 1) Ceiling-mounted production camera in a real food-production facility, 2) Video decoding and frame sampling, 3) Detection layer with YOLO-family candidates and one selected detector highlighted, 4) Multi-object tracking layer with ByteTrack and BoT-SORT shown as compared options and one selected tracker highlighted, 5) Spatial semantics layer with named production zones, 6) Observation variable layer with occupancy, entries, exits, dwell time, trajectories, and heatmaps, 7) Digital twin interface with state variables, dashboards, reports, and decision support. Use subtle color coding by layer. Keep the diagram technical, sparse, and publication-ready.",
+      "must_include_text": [
+        "Production video",
+        "Detection layer",
+        "Tracking layer",
+        "Spatial semantics",
+        "Observation variables",
+        "Digital twin interface"
+      ],
+      "avoid": [
+        "camera ID labels such as CAM10",
+        "the word workshop",
+        "marketing style infographics",
+        "large decorative icons",
+        "dark background"
+      ],
+      "reference_asset": "raw/paper_added_images/ChatGPT Image Apr 22, 2026, 02_34_41 PM.png"
+    },
+    {
+      "id": "zone_semantics_panel",
+      "target_figure": "Figure 5 optional overlay companion",
+      "goal": "Explain how tracks become zone-based observation variables.",
+      "canvas": {
+        "aspect_ratio": "4:3",
+        "background": "white"
+      },
+      "style": {
+        "visual_language": "compact academic schematic",
+        "palette": [
+          "#2956A3",
+          "#D97706",
+          "#3C8D40",
+          "#374151"
+        ],
+        "font_style": "modern sans serif",
+        "line_style": "thin outlines",
+        "effects": "flat vector only"
+      },
+      "prompt": "Create a clean explanatory panel for a research paper. Show one overhead production frame with simple polygon zones on the left, track fragments in the center, and derived observation variables on the right. The right panel should list occupancy, entries, exits, dwell time, and trajectory density. Use arrows to show that zone membership plus track continuity produce those variables. Keep the text minimal and the shapes crisp. Make the figure look like a publication figure, not a slide.",
+      "must_include_text": [
+        "Zone membership",
+        "Track continuity",
+        "Occupancy",
+        "Entries",
+        "Exits",
+        "Dwell time"
+      ],
+      "avoid": [
+        "camera IDs",
+        "pseudo-code",
+        "long captions inside the image",
+        "dark backgrounds"
+      ]
+    },
+    {
+      "id": "graphical_abstract_vertical",
+      "target_figure": "Optional graphical abstract",
+      "goal": "Summarize the framework in a compact vertical visual that can be reused in submission systems or talks.",
+      "canvas": {
+        "aspect_ratio": "4:5",
+        "background": "white"
+      },
+      "style": {
+        "visual_language": "minimal graphical abstract",
+        "palette": [
+          "#2956A3",
+          "#3C8D40",
+          "#D97706",
+          "#6B46C1"
+        ],
+        "font_style": "modern sans serif",
+        "line_style": "medium outlines",
+        "effects": "flat vector, no shadows"
+      },
+      "prompt": "Create a vertical graphical abstract for a journal paper. The figure should stack four stages from top to bottom: production video, detection plus tracking, zone-based observation variables, and digital twin monitoring outputs. Use a ceiling-mounted camera icon at the top, a clean detection plus tracking panel in the middle, and a final state-variable panel at the bottom with occupancy, entries, exits, dwell time, and heatmaps. The figure should look formal, sparse, and publication-ready.",
+      "must_include_text": [
+        "Production video",
+        "Detection + tracking",
+        "Observation variables",
+        "Digital twin monitoring"
+      ],
+      "avoid": [
+        "CAM10",
+        "workshop",
+        "bright presentation colors",
+        "UI mockup styling"
+      ]
+    }
+  ]
+}

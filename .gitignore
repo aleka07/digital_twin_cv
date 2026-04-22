@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Local environments / editor noise
+.venv/
+venv/
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Large or private source data
+data/cam10/source_video/
+data/cam10/raw_frames/
+data/cam10/labels/
+data/cam10/seed_round1/
+data/cam10/round2/
+data/cam10/test_round1/
+data/cam24/raw_frames/
+data/cam24/labels/
+data/**/labels/*.cache
+
+# Model weights and local downloads
+weights/
+*.pt
+*.onnx
+*.engine
+
+# Generated experiment outputs
+experiments/
+figures/
+_active_learning_tmp/
+
+# Generated demo / selection assets
+results/graphical_abstract_assets/
+
+# Tracking frame dumps can be large; keep only metadata files
+tracking_benchmark/clip_A/frames/
+tracking_benchmark/clip_B/frames/
+
+# Local archives
+*.zip
+

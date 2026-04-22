@@ -1,0 +1,85 @@
+{
+  "figure_id": "graphical_abstract_landscape",
+  "source_bundle": "article_pack/observation_layer_diagram_prompts.json",
+  "goal": "Generate a compact landscape graphical abstract summarizing the observation-level framework for digital twins in manufacturing.",
+  "language": "English",
+  "diagram_type": "horizontal graphical abstract",
+  "canvas": {
+    "aspect_ratio": "16:9",
+    "background": "white"
+  },
+  "style": {
+    "look": "minimal graphical abstract",
+    "visual_language": "formal and sparse publication visual",
+    "palette": {
+      "input": "#E3F2FD",
+      "perception": "#BBDEFB",
+      "tracking": "#C8E6C9",
+      "observation": "#FFE0B2",
+      "output": "#EDE7F6",
+      "stroke": "#1F2937"
+    },
+    "font_style": "modern sans serif",
+    "line_style": "medium outlines",
+    "effects": "flat vector, no shadows"
+  },
+  "article_context": {
+    "paper_theme": "observation-level framework for digital twins in manufacturing",
+    "core_stages": [
+      "production video",
+      "detection plus tracking",
+      "zone-based observation variables",
+      "digital twin monitoring outputs"
+    ],
+    "selected_detector": "YOLO11x",
+    "selected_tracker": "ByteTrack"
+  },
+  "instructions": [
+    "Lay out four main stages from left to right.",
+    "Stage 1 should show production video input.",
+    "Stage 2 should show detection plus tracking as one compact perception block.",
+    "Stage 3 should show observation variables such as occupancy, entries, exits, dwell time, and heatmaps.",
+    "Stage 4 should show digital twin monitoring outputs and reporting.",
+    "Keep the visual formal, sparse, and publication-ready."
+  ],
+  "nodes": [
+    {
+      "id": "A",
+      "label": "Production Video",
+      "group": "input"
+    },
+    {
+      "id": "B",
+      "label": "Detection + Tracking\nYOLO11x + ByteTrack",
+      "group": "perception"
+    },
+    {
+      "id": "C",
+      "label": "Observation Variables\noccupancy, entries, exits,\ndwell time, heatmaps",
+      "group": "observation"
+    },
+    {
+      "id": "D",
+      "label": "Digital Twin Monitoring\nreports, dashboards,\ndecision support",
+      "group": "output"
+    }
+  ],
+  "edges": [
+    ["A", "B"],
+    ["B", "C"],
+    ["C", "D"]
+  ],
+  "must_include_text": [
+    "Production video",
+    "Detection + tracking",
+    "Observation variables",
+    "Digital twin monitoring"
+  ],
+  "avoid": [
+    "CAM10",
+    "workshop",
+    "bright presentation colors",
+    "UI mockup styling"
+  ],
+  "caption_hint": "Compact graphical abstract summarizing the proposed observation-level framework for digital twins in manufacturing."
+}

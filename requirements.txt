@@ -1,0 +1,21 @@
+# Core ML
+ultralytics>=8.1.0
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Video and image processing
+opencv-python>=4.8.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Visualization
+matplotlib>=3.7.0
+
+# Tracking and evaluation
+lapx>=0.5.2
+py-motmetrics>=0.1.13
+
+# Utilities
+tqdm>=4.65.0
+pyyaml>=6.0
+

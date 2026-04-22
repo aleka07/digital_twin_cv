@@ -1,0 +1,8 @@
+path: C:/Users/SuperPC/Documents/DIPLOM/article_pack/data/cam10/test_round1
+train: images/test
+val: images/test
+test: images/test
+
+names:
+  0: person
+  1: vat

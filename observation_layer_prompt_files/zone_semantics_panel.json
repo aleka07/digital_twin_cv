@@ -1,0 +1,77 @@
+{
+  "figure_id": "zone_semantics_panel",
+  "source_bundle": "article_pack/observation_layer_diagram_prompts.json",
+  "goal": "Generate a compact landscape academic companion figure explaining how tracked objects become zone-based observation variables.",
+  "language": "English",
+  "diagram_type": "horizontal explanatory panel",
+  "canvas": {
+    "aspect_ratio": "4:3",
+    "background": "white"
+  },
+  "style": {
+    "look": "compact academic schematic",
+    "visual_language": "clean explanatory panel with crisp blocks and thin arrows",
+    "palette": {
+      "frame": "#E3F2FD",
+      "zones": "#FFF3E0",
+      "tracks": "#C8E6C9",
+      "variables": "#EDE7F6",
+      "stroke": "#1F2937"
+    },
+    "font_style": "modern sans serif",
+    "line_style": "thin outlines",
+    "effects": "flat vector only"
+  },
+  "article_context": {
+    "paper_theme": "observation-level framework for digital twins in manufacturing",
+    "input": "tracked people and movable production objects",
+    "zone_rule": "zone membership combined with track continuity",
+    "derived_outputs": [
+      "occupancy",
+      "entries",
+      "exits",
+      "dwell time",
+      "trajectory density"
+    ]
+  },
+  "instructions": [
+    "Compose the panel left-to-right in three logical parts.",
+    "On the left show a simplified production frame with polygon zones.",
+    "In the middle show track fragments and continuity cues.",
+    "On the right show derived observation variables as a concise list or small cards.",
+    "Keep the text minimal and the shapes crisp.",
+    "Make the figure look like a publication figure, not a slide."
+  ],
+  "panels": [
+    {
+      "id": "A",
+      "label": "Zone Membership",
+      "description": "simplified production scene with polygon zones and object positions"
+    },
+    {
+      "id": "B",
+      "label": "Track Continuity",
+      "description": "track fragments and continuity arrows across time"
+    },
+    {
+      "id": "C",
+      "label": "Observation Variables",
+      "description": "occupancy, entries, exits, dwell time, trajectory density"
+    }
+  ],
+  "must_include_text": [
+    "Zone membership",
+    "Track continuity",
+    "Occupancy",
+    "Entries",
+    "Exits",
+    "Dwell time"
+  ],
+  "avoid": [
+    "camera IDs",
+    "pseudo-code",
+    "long captions inside the image",
+    "dark backgrounds"
+  ],
+  "caption_hint": "Zone semantics panel showing how zone membership and track continuity are transformed into observation variables for manufacturing digital twin monitoring."
+}

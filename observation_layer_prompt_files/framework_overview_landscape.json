@@ -1,0 +1,118 @@
+{
+  "figure_id": "framework_overview_landscape",
+  "source_bundle": "article_pack/observation_layer_diagram_prompts.json",
+  "goal": "Generate a clean academic landscape architecture diagram for the full reusable observation-level framework from production video to digital-twin-ready state variables.",
+  "language": "English",
+  "diagram_type": "horizontal layered framework diagram",
+  "canvas": {
+    "aspect_ratio": "16:9",
+    "background": "white"
+  },
+  "style": {
+    "look": "journal-ready vector architecture diagram",
+    "visual_language": "clean academic schematic with sparse labels and balanced spacing",
+    "palette": {
+      "input": "#E3F2FD",
+      "perception": "#BBDEFB",
+      "tracking": "#C8E6C9",
+      "semantics": "#FFF3E0",
+      "observation": "#FFE0B2",
+      "output": "#EDE7F6",
+      "stroke": "#1F2937"
+    },
+    "font_style": "modern sans serif",
+    "line_style": "thin to medium outlines with straight arrows",
+    "effects": "flat vector only, no gradients, no 3D, no glossy UI"
+  },
+  "article_context": {
+    "paper_theme": "observation-level framework for digital twins in manufacturing",
+    "input_domain": "single production-camera video streams in a real manufacturing facility",
+    "detector_candidates": [
+      "YOLO-family candidates"
+    ],
+    "selected_detector": "YOLO11x",
+    "tracker_candidates": [
+      "ByteTrack",
+      "BoT-SORT"
+    ],
+    "selected_tracker": "ByteTrack",
+    "observation_variables": [
+      "occupancy",
+      "entries",
+      "exits",
+      "dwell time",
+      "trajectories",
+      "heatmaps"
+    ],
+    "final_output": "digital twin interface with state variables, dashboards, reports, and decision support"
+  },
+  "instructions": [
+    "Use a left-to-right flow with rounded rectangles and thin arrows.",
+    "Keep the figure technical, sparse, and publication-ready.",
+    "Show reusable framework layers rather than a single local case study.",
+    "Show candidate methods inside the detection and tracking layers, but visually highlight the selected components.",
+    "Make the observation variable layer explicit because it is the conceptual contribution.",
+    "Use subtle color coding by layer and keep text short."
+  ],
+  "nodes": [
+    {
+      "id": "A",
+      "label": "Production Video\n(single fixed camera)",
+      "group": "input"
+    },
+    {
+      "id": "B",
+      "label": "Video Decoding\n+ Frame Sampling",
+      "group": "input"
+    },
+    {
+      "id": "C",
+      "label": "Detection Layer\nYOLO-family candidates\nselected: YOLO11x",
+      "group": "perception"
+    },
+    {
+      "id": "D",
+      "label": "Tracking Layer\nByteTrack / BoT-SORT\nselected: ByteTrack",
+      "group": "tracking"
+    },
+    {
+      "id": "E",
+      "label": "Spatial Semantics\nproduction zones",
+      "group": "semantics"
+    },
+    {
+      "id": "F",
+      "label": "Observation Variables\noccupancy, entries, exits,\ndwell time, trajectories, heatmaps",
+      "group": "observation"
+    },
+    {
+      "id": "G",
+      "label": "Digital Twin Interface\nstate variables, dashboards,\nreports, decision support",
+      "group": "output"
+    }
+  ],
+  "edges": [
+    ["A", "B"],
+    ["B", "C"],
+    ["C", "D"],
+    ["D", "E"],
+    ["E", "F"],
+    ["F", "G"]
+  ],
+  "must_include_text": [
+    "Production video",
+    "Detection layer",
+    "Tracking layer",
+    "Spatial semantics",
+    "Observation variables",
+    "Digital twin interface"
+  ],
+  "avoid": [
+    "camera ID labels such as CAM10",
+    "the word workshop",
+    "marketing style infographics",
+    "large decorative icons",
+    "dark background"
+  ],
+  "caption_hint": "Reusable observation-level framework for digital twins in manufacturing, connecting production video streams, perception, tracking, spatial semantics, and derived observation variables to digital twin interfaces."
+}

@@ -1,0 +1,3 @@
+tracker,detector,hota,mota,idf1,id_switches,fps,notes
+bytetrack,best.pt,0.783,0.718,0.787,15,27.6,"clips=clip_A+clip_B, iou=0.5, conf=0.25, imgsz=1280"
+botsort,best.pt,0.767,0.719,0.786,17,17.0,"clips=clip_A+clip_B, iou=0.5, conf=0.25, imgsz=1280"

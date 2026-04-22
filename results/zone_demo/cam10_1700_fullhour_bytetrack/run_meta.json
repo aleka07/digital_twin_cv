@@ -1,0 +1,14 @@
+{
+  "video": "article_pack\\data\\cam10\\source_video\\1_10_R_23032026170000.mp4",
+  "zones": "article_pack\\zones\\cam10_zones_final.json",
+  "model": "runs\\detect\\article_pack\\experiments\\detector\\cam10_round12_yolo11x\\weights\\best.pt",
+  "tracker": "bytetrack",
+  "fps": 6.0,
+  "total_frames_in_video": 21601,
+  "start_frame": 1,
+  "end_frame": 21601,
+  "frames_processed": 21601,
+  "duration_seconds": 3600.167,
+  "duration_hms": "01:00:00",
+  "unique_track_ids": 639
+}
